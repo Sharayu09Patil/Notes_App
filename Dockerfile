@@ -1,14 +1,44 @@
+#page
+
 Page up
+
+#GNU
+
   GNU nano 3.2                                         Dockerfile                                                   
 # Python image to use.
+#
+#,
+
+#python_3.8
+
 FROM python:3.8
 # Set the working directory to /app
+
+#work_dir
+
 WORKDIR /app
-# copy the requirements file used for dependencies
+
+#requirements file used
+#,
+#files
+
 COPY requirements.txt .
-# Install any needed packages specified in requirements.txt
+
+# packages from requirements.txt
+#install_packages
+
+
 RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
-# Copy the rest of the working directory contents into the container at /app
+
+# Copy the working_dir in the container (app)
+
 COPY . .
-# Run app.py when the container launches
+
+
+# Run app.py
+#container_launches
+
 CMD [ "python3", "main.py", "--host=0.0.0.0"]
+
+#,,
+#'
