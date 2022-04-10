@@ -1,4 +1,17 @@
+#ignore
+
+
+#docker
+
 .dockerignore
+
+#code
 .vscode
+#.
+
 .idea
+
+#readme_file
 .readmes
+
+#.
