@@ -1,13 +1,19 @@
+#importing create_app
 from website import create_app
 
 # app = create_app()
 
 # if __name__ == '__main__':
 #     app.run(debug=True)
+#import os
 import os
 # from website import create_app
+#assigning app to create_app
+
 
 app = create_app()
+#,
+#''
 
 if __name__ == '__main__':
     server_port = os.environ.get('PORT', '8080')
