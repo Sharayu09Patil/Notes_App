@@ -1,3 +1,13 @@
+#,
+#vscode
+
 .vscode
+
+#website
 website/__pycache__
+
+#db_wbste
 website/database.db
+
+#,
+#.
